@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-usecases",
+  "description": "ESLint configs by usecase",
+  "version": "1.0.0",
+  "author": "Marc-Aurèle DARCHE",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madarche/eslint-config-usecases.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "scripts": {
+    "posttest": "npm run lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "usecase/index.js",
+  "peerDependencies": {
+    "eslint": ">=3"
+  },
+  "devDependencies": {
+    "eslint": "3.8.0"
+  }
+}
