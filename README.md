@@ -4,6 +4,7 @@ eslint-config-usecases
 [![NPM version](http://img.shields.io/npm/v/eslint-config-usecases.svg)](https://www.npmjs.org/package/eslint-config-usecases)
 [![Dependency Status](https://david-dm.org/madarche/eslint-config-usecases.svg)](https://david-dm.org/madarche/eslint-config-usecases)
 [![devDependency Status](https://david-dm.org/madarche/eslint-config-usecases/dev-status.svg)](https://david-dm.org/madarche/eslint-config-usecases#info=devDependencies)
+[![Build Status](https://travis-ci.org/madarche/eslint-config-usecases.svg?branch=master)](https://travis-ci.org/madarche/eslint-config-usecases)
 
 ESLint configs by usecase
 
