@@ -42,6 +42,14 @@ of your project depending on  what is inside each directory.
 For more information read [ESLint Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs)
 
 
+Note
+----
+
+Because JavaScript is more powerful, flexible and expressive, I prefer to use
+JavaScript ESLint configuration files over JSON or YML. That's why there isn't
+any `.eslintrc`, `.eslintrc.json` or `.eslintrc.yml` files.
+
+
 Contributions
 -------------
 
