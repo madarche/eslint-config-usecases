@@ -10,12 +10,15 @@ ESLint configs by usecase
 
 Those ESLint configs are presented around 3 use cases of JavaScript:
 
-* JavaScript in Node.js applications (use this for Electron applications too) ([`usecases/usecase/nodejs`](./usecase/nodejs.js))
-* JavaScript in the browsers ([`usecases/usecase/browser`](./usecase/browser.js))
-* JavaScript in development code (including automated tests) ([`usecases/usecase/dev`](./usecase/dev.js))
+* JavaScript in Node.js applications (use this for Electron applications too)
+  ([`usecases/usecase/nodejs`](./usecase/nodejs.js))
+* JavaScript in the browsers
+  ([`usecases/usecase/browser`](./usecase/browser.js))
+* JavaScript in development code (including automated tests)
+  ([`usecases/usecase/dev`](./usecase/dev.js))
 
-All those usecases have their special env and rules set, and all those usecases
-inherit [some common properties](./usecase/lib/common.js).
+All those usecases have their special `env` and `rules` set, while inheriting
+[some common properties](./usecase/lib/common.js).
 
 
 Usage
