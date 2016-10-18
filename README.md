@@ -24,11 +24,17 @@ All those usecases have their special `env` and `rules` set, while inheriting
 Usage
 -----
 
-In your project locally install the `eslint-config-usecases` package:
+If not already present, install the `eslint` package locally in your project:
+
+    $ npm install eslint --save-dev
+
+Then, still in your project, locally install the `eslint-config-usecases`
+package:
 
     $ npm install eslint-config-usecases --save-dev
 
-Then add a file `.eslintrc.js` at the root of your project with the following content:
+And finally you have to add a file `.eslintrc.js` at the root of your project
+with the following content:
 
 ```javascript
 module.exports = {
