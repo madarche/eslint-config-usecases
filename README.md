@@ -33,7 +33,7 @@ package:
 
     $ npm install eslint-config-usecases --save-dev
 
-And finally you have to add a file `.eslintrc.js` at the root of your project
+And finally you have to add an `.eslintrc.js` file at the root of your project
 with the following content:
 
 ```javascript
