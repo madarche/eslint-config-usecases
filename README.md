@@ -7,7 +7,7 @@ eslint-config-usecases
 [![Build Status](https://travis-ci.org/madarche/eslint-config-usecases.svg?branch=master)](https://travis-ci.org/madarche/eslint-config-usecases)
 
 ESLint configs by usecase with a strong bias towards quality, strictness and the
-decision to ban useless semicolons (that is `;`) for legibility and efficiency
+decision to ban useless semicolons (`;`) for legibility and efficiency
 (cf. [the "semi" never rule](http://eslint.org/docs/rules/semi)).
 
 Those ESLint configs are presented around 3 use cases of JavaScript:
