@@ -10,12 +10,14 @@ ESLint configs by usecase with a strong bias towards quality, strictness and the
 decision to ban useless semicolons (`;`) for legibility and efficiency
 (cf. [the "semi" never rule](http://eslint.org/docs/rules/semi)).
 
-Those ESLint configs are presented around 3 use cases of JavaScript:
+Those ESLint configs are presented around the following use cases of JavaScript:
 
 * JavaScript in Node.js applications (use this for Electron applications too)
   ([`usecases/usecase/nodejs`](./usecase/nodejs.js))
-* JavaScript in the browsers
+* JavaScript in browsers
   ([`usecases/usecase/browser`](./usecase/browser.js))
+* JavaScript in browsers using CommonJS (typically using Browserify/WebPack)
+  ([`usecases/usecase/browser-commonjs`](./usecase/browser-commonjs.js))
 * JavaScript in development code (including automated tests)
   ([`usecases/usecase/dev`](./usecase/dev.js))
 
