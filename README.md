@@ -68,6 +68,6 @@ Contributions
 -------------
 
 Those linting and style rules are the ones I use for the projects I work on, but
-fill free to contribute if you have similar tastes.
+feel free to contribute if you have similar tastes.
 
 So pull Requests and contributions in general are welcome
