@@ -1,5 +1,5 @@
 module.exports = {
-    extends: 'usecases/usecase/lib/common',
+    extends: ['usecases/usecase/lib/common','usecases/usecase/lib/es2015'],
     env: {
         es6: true,
         node: true
@@ -7,17 +7,9 @@ module.exports = {
     rules: {
         //*** Programming best practices ***
 
-        // Don't use "var", only use "let" and "const"
-        'no-var': 'error',
-
         // Use "require" statements in the global scope context (eg. no
         // "require" statements inside functions, etc.)
         'global-require': 'error',
-
-        // Use arrow functions instead of callbacks
-        'prefer-arrow-callback': 'error',
-        // Use parentheses around arrow function params even if empty
-        'arrow-parens': 'error',
 
         // No Sync methods are they degrade perfs
         'no-sync': 'error',
