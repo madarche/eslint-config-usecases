@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['usecases/usecase/lib/common','usecases/usecase/lib/es2015'],
+    extends: ['usecases/usecase/lib/es2015'],
     env: {
         es6: true,
         node: true
