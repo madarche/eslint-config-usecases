@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-usecases",
   "description": "ESLint configs by usecase",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Marc-Aurèle DARCHE",
   "license": "MIT",
   "repository": {
