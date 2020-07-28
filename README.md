@@ -2,24 +2,35 @@ eslint-config-usecases
 ======================
 
 [![NPM version](http://img.shields.io/npm/v/eslint-config-usecases.svg)](https://www.npmjs.org/package/eslint-config-usecases)
-[![Dependency Status](https://david-dm.org/madarche/eslint-config-usecases.svg)](https://david-dm.org/madarche/eslint-config-usecases)
-[![devDependency Status](https://david-dm.org/madarche/eslint-config-usecases/dev-status.svg)](https://david-dm.org/madarche/eslint-config-usecases#info=devDependencies)
 [![Build Status](https://travis-ci.org/madarche/eslint-config-usecases.svg?branch=master)](https://travis-ci.org/madarche/eslint-config-usecases)
 
 ESLint configs by usecase with a strong bias towards quality, strictness and the
 decision to ban useless semicolons (`;`) for legibility and efficiency
 (cf. [the "semi" never rule](http://eslint.org/docs/rules/semi)).
 
-Those ESLint configs are presented around the following use cases of JavaScript:
+Those ESLint configs are devised around some specific use cases of JavaScript:
 
-* JavaScript in Node.js applications (use this for Electron applications too)
-  ([`usecases/usecase/nodejs`](./usecase/nodejs.js))
-* JavaScript in browsers
-  ([`usecases/usecase/browser`](./usecase/browser.js))
-* JavaScript in browsers using CommonJS (typically using Browserify/WebPack)
-  ([`usecases/usecase/browser-commonjs`](./usecase/browser-commonjs.js))
-* JavaScript in development code (including automated tests)
-  ([`usecases/usecase/dev`](./usecase/dev.js))
+* ([`usecases/usecase/nodejs`](./usecase/nodejs.js)):
+  JavaScript for Node.js applications (and thus including Electron applications)
+
+* ([`usecases/usecase/browser-vue`](./usecase/browser-vue.js)):
+  JavaScript for browsers for Vue.js applications
+
+* ([`usecases/usecase/browser-commonjs`](./usecase/browser-commonjs.js)):
+  JavaScript for browsers using CommonJS through the build of a bundle
+  (with Browserify/WebPack)
+
+* ([`usecases/usecase/browser-modern`](./usecase/browser-modern.js)):
+  JavaScript for modern browsers with support for ES2015 and up
+
+* ([`usecases/usecase/browser`](./usecase/browser.js)):
+  JavaScript for all browsers even old
+
+* ([`usecases/usecase/test-jest`](./usecase/test-jest.js)):
+  Tests with Jest
+
+* ([`usecases/usecase/test-mocha`](./usecase/test-mocha.js)):
+  Tests with Mocha
 
 All those usecases have their special `env` and `rules` set, while inheriting
 [some common properties](./usecase/lib/common.js).
@@ -67,7 +78,5 @@ any `.eslintrc`, `.eslintrc.json` or `.eslintrc.yml` files.
 Contributions
 -------------
 
-Those linting and style rules are the ones I use for the projects I work on, but
-feel free to contribute if you have similar tastes.
-
-So pull Requests and contributions in general are welcome
+Those use cases are focusing only on some needs on purpose. Exhaustiveness is
+not intended. Feel free to contribute if you have similar needs.

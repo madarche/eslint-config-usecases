@@ -1,19 +1,12 @@
 module.exports = {
-    plugins: [
-        'vue'
-    ],
     extends: [
         'plugin:vue/recommended'
     ],
     rules: {
         // override/add rules' settings here
         // see rules at https://www.npmjs.com/package/eslint-plugin-vue#bulb-rules
-        //
-        // modify level: essential
-        //
-        'vue/require-v-for-key': 'off',
-        //
         // modify level: strongly-recommended
+        //
         //
         'vue/html-self-closing': ['error', {
             html: {
@@ -30,14 +23,16 @@ module.exports = {
         }],
         'vue/mustache-interpolation-spacing': ['error', 'never'],
         'vue/name-property-casing': ['error', 'kebab-case'],
-        'vue/require-default-prop': 'off',
-        'vue/require-prop-types': 'off',
+        'vue/require-default-prop': 'off', // TODO: actuellement c'est undefined
+        'vue/require-prop-types': 'off', //on ne type pas en js, on desactive cette regle
         'vue/v-bind-style': ['error', 'longform'],
         'vue/v-on-style': ['error', 'longform'],
         //
+        //
         // modify level: recommended
         //
-        'vue/attributes-order': ['off', // TODO: validate an alternate order
+        //
+        'vue/attributes-order': ['off', // TODO: souhitable ? valider l'ordre alternatif ?
             {
                 order: [
                     'CONDITIONALS',         // ex: 'v-if', 'v-else-if', 'v-else', 'v-show', 'v-cloak'
@@ -53,13 +48,22 @@ module.exports = {
                 ]
             }],
         //
+        //
         // add Uncategorized rules
         //
-        'vue/html-closing-bracket-newline': 'error',
+        //
+        'vue/html-closing-bracket-newline': 'off',
         'vue/html-closing-bracket-spacing': ['error', {
             selfClosingTag: 'never' // disallow spaces
         }],
         'vue/prop-name-casing': ['error', 'snake_case'],
-        'vue/script-indent': 'off' // No JavaScript in .vue files
+        'vue/script-indent': 'off', // on ne met pas de javascript dans les .vue, le linting normal s'applique
+
+        // upgrade eslint plugin vue 6.x
+
+        'vue/no-v-html': 'off',
+        'vue/no-use-v-if-with-v-for': 'off',
+        'vue/multiline-html-element-content-newline': 'off',
+        'vue/singleline-html-element-content-newline': 'off'
     }
 };

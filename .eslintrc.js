@@ -7,6 +7,8 @@ module.exports = {
     rules: {
         indent: ['error', 4],
         quotes: ['error', 'single'],
-        'quote-props': ['error', 'as-needed']
+        'quote-props': ['error', 'as-needed'],
+        'no-multiple-empty-lines': ['error', {max: 1}],
+        'no-trailing-spaces': 'error',
     }
 };

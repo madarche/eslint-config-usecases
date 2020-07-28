@@ -1,7 +1,6 @@
 module.exports = {
     extends: 'usecases/usecase/nodejs',
     env: {
-        mocha: true,
-        jasmine: true
+        mocha: true
     }
 };
