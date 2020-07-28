@@ -1,7 +1,17 @@
 language: node_js
+
+cache:
+  directories:
+    - node_modules
+
 node_js:
-  - 'stable'
-  - 'lts/*'
-sudo: false
+  - "stable"
+  - "lts/*"
+
+# Travis CI uses "npm ci" by default because there is a package-lock.json file
+#install:
+#  - npm ci
+
 script:
-  - npm run-script test:ci
+  - npm run test:ci
+
