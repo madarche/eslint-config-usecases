@@ -2,11 +2,11 @@ module.exports = {
     extends: ['usecases/usecase/lib/common',
         'usecases/usecase/lib/es2015', 'usecases/usecase/lib/es2017'],
     parserOptions: {
-        ecmaVersion: 2017,
+        ecmaVersion: 2019,
         sourceType: 'script'
     },
     env: {
-        es6: true,
+        es2017: true,
         node: true
     },
     rules: {
